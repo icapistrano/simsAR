@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Detection</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tensorflow/2.7.0/tf.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/coco-ssd"> </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r122/three.min.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <video id="videoId" autoplay muted style="visibility:hidden;"></video>
+    <canvas id="canvas" width="640" height="480"
+        style="position: absolute; top:0; left: 0; border:1px red solid"></canvas>
+    <canvas id="canvasThree" width="640" height="480" style="position: absolute; top:0; left: 0;"></canvas>
+
+    <button id="take-pic">Press Me</button>
+</body>
+
+<script src="./js/combine.js"></script>
+
+</html>
